@@ -31,7 +31,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #000000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2825,8 +2825,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
-  background-color: #f8f9fa;
+  color: white;
+  background-color: #212529;
   border-color: #f8f9fa;
 }
 
@@ -8437,7 +8437,10 @@ button.bg-dark:focus {
 
 .mt-0,
 .my-0 {
-  margin-top: 0 !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 2;
+  font-weight: bold;
 }
 
 .mr-0,
@@ -8462,6 +8465,7 @@ button.bg-dark:focus {
 .mt-1,
 .my-1 {
   margin-top: 0.25rem !important;
+  margin-bottom: -1.5rem !important;
 }
 
 .mr-1,
@@ -8544,6 +8548,11 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+  /*text-align: justify;*/
+  word-spacing: 3px;
+  font-family: "Times New Roman";
+  font-size: 20px;
+
 }
 
 .ml-4,
@@ -8701,7 +8710,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 1rem !important;
 }
 
 .pr-5,
@@ -10580,15 +10589,17 @@ hr.light {
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
+  margin-bottom: 0.5rem;
   font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   border: none;
   border-radius: 10rem;
 }
 
 .page-section {
   padding: 8rem 0;
+  background-color: #f2f2f2;
 }
 
 #mainNav {
